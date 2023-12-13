@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundimage">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="93dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/planeicon" />
+
+    <TextView
+        android:id="@+id/user_details"
+        android:layout_width="362dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/logout"
+        android:text="@string/logout"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="49dp"
+        android:text="INFO"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="116dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="54dp"
+        android:text="SCORE"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="38dp"
+        android:onClick="toGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_details"
+        app:srcCompat="@drawable/controller" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="86dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="22dp"
+        android:onClick="toInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="84dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="18dp"
+        android:onClick="toScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/trophy" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="53dp"
+        android:text="PLAY"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/user_details" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="61dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:onClick="toMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/music" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
